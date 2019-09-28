@@ -25,11 +25,11 @@ Your newly created webhook is ready! Copy the webhook url.
 
 A basic request looks like this:
 
-```json
+```javascript
     {
-        'username': 'Obi-Wan Kenobi',
-        'icon_url': 'https://bit.ly/2nQZ6vg',
-        'text'    : 'It\'s over Anakin! I have the high ground.'
+        "username": "Obi-Wan Kenobi",
+        "icon_url": "https://bit.ly/2nQZ6vg",
+        "text"    : "It's over Anakin! I have the high ground."
     }
 ```
 > `username` is the username of the message.
@@ -40,12 +40,12 @@ A basic request looks like this:
 
 Optionally you can add additional channels to customize messages. For example the `channel` allows you to specify on what channel to post the message. If un-specified it will post to the default channel selected when the webhook was created.
 
-```json
+```javascript
     {
-        'channel' : 'Mustafar',
-        'username': 'Obi-Wan Kenobi',
-        'icon_url': 'https://bit.ly/2nQZ6vg',
-        'text'    : 'It\'s over Anakin! I have the high ground.'
+        "channel" : "Mustafar",
+        "username": "Obi-Wan Kenobi",
+        "icon_url": "https://bit.ly/2nQZ6vg",
+        "text"    : "It\'s over Anakin! I have the high ground."
     }
 ```
 
