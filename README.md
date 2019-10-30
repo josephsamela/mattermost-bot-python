@@ -11,14 +11,23 @@ Writing a mattermost bot is easy as sending a single post request!
 ## 1. Where do I send the request?
 
 Open the hamburger menu and click on "Integrations".
+
 ![](1.png)
+
 In the Integration Menu, click "Incoming Webhook".
+
 ![](2.png)
+
 Click "Add Incoming Webhook". 
+
 ![](3.png)
+
 Complete the form!
+
 ![](4.png)
+
 Your newly created webhook is ready! Copy the webhook url.
+
 ![](5.png)
 
 ## 2. What does a request look like?
@@ -26,11 +35,11 @@ Your newly created webhook is ready! Copy the webhook url.
 A basic request looks like this:
 
 ```javascript
-    {
-        "username": "Obi-Wan Kenobi",
-        "icon_url": "https://bit.ly/2nQZ6vg",
-        "text"    : "It's over Anakin! I have the high ground."
-    }
+{
+    "username": "Obi-Wan Kenobi",
+    "icon_url": "https://bit.ly/2nQZ6vg",
+    "text"    : "It's over Anakin! I have the high ground."
+}
 ```
 > `username` is the username of the message.
 >
@@ -41,12 +50,12 @@ A basic request looks like this:
 Optionally you can add additional channels to customize messages. For example the `channel` allows you to specify on what channel to post the message. If un-specified it will post to the default channel selected when the webhook was created.
 
 ```javascript
-    {
-        "channel" : "Mustafar",
-        "username": "Obi-Wan Kenobi",
-        "icon_url": "https://bit.ly/2nQZ6vg",
-        "text"    : "It\'s over Anakin! I have the high ground."
-    }
+{
+    "channel" : "Mustafar",
+    "username": "Obi-Wan Kenobi",
+    "icon_url": "https://bit.ly/2nQZ6vg",
+    "text"    : "It\'s over Anakin! I have the high ground."
+}
 ```
 
 ## 3. How do I send the request?
